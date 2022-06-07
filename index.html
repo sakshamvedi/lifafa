@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lifafa</title>
+</head>
+<body>
+    <header class="text-black body-font bg-yellow-600">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <img src="lifafa.jpg" height="0px" width="150px">
+            <span class="ml-3 text-xl font-medium"></span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+              <a  href= "certificate.html">
+            <button class="flex mx-auto text-white bg-indigo-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">My Certificates</button>
+        </a>
+           
+          </nav>
+         
+        </div>
+      </header>
+
+      <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Add Certificates</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">A Digital Certificate Holder Powered  By Your Local-Storage</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+                  <input type="text" id="na"  class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" >
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-400">
+                    Issuing organization : </label>
+                  <input type="text" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <br>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-400">
+                   Issue Date : </label>
+                  <input type="text" id="dates" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-400">
+                    Credential ID : </label>
+                  <input type="text" id="cred" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-400">Credential URL</label>
+                  <input id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-15 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-green-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="add()">Add Certificate</button>
+                
+              </div>
+              <button class="flex mx-auto text-white bg-red-400 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="deleted()">Delete Certifications</button>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                <a class="text-indigo-400">Created with ❤️ by Saksham Chaturvedi  </a>
+                
+                <p class="leading-normal my-5">
+
+                  <br>
+                </p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <script src="setting.js"></script>
+</body>
+</html>
